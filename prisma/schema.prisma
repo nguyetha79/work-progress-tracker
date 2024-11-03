@@ -9,6 +9,41 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
+}
+
+model WorkProgress {
+  id          Int      @id @default(autoincrement())
+  workItem    String   @db.VarChar(255)
+  description String   @db.Text
+  category    Category @default(PLANNING)
+  progress    Progress @default(NOT_STARTED)
+  priority    Priority @default(HIGH)
+  startDate   DateTime @default(now())
+  dueDate     DateTime
+  notes       String   @db.Text
+}
+
+enum Category {
+  PLANNING
+  DESIGN
+  ENGINEERING
+  MARKETING
+  RESEARCH
+}
+
+enum Progress {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+  BLOCKED
+  BEHIND
+}
+
+enum Priority {
+  CRITICAL
+  HIGH
+  MEDIUM
+  LOW
 }
