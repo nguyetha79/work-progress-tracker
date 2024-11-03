@@ -1,4 +1,4 @@
 {
-  "/workprogress/page": "app/workprogress/page.js",
-  "/page": "app/page.js"
+  "/api/workprogress/route": "app/api/workprogress/route.js",
+  "/workprogress/page": "app/workprogress/page.js"
 }
