@@ -16,10 +16,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/workprogress/page.js"
     ],
-    "/api/workprogress/route": [
+    "/workprogress/new/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/api/workprogress/route.js"
+      "static/css/app/workprogress/new/page.css",
+      "static/chunks/app/workprogress/new/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
