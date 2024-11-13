@@ -1,5 +1,5 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/workprogress/page": "app/workprogress/page.js",
+  "/page": "app/page.js",
   "/workprogress/new/page": "app/workprogress/new/page.js"
 }

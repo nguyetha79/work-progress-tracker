@@ -4,6 +4,8 @@ import { Box, Button, Flex, Text, TextArea, TextField } from "@radix-ui/themes";
 import React from "react";
 import Datetime from "react-datetime";
 import "react-datetime/css/react-datetime.css";
+import SimpleMDE from "react-simplemde-editor";
+import "easymde/dist/easymde.min.css";
 
 const NewWorkItemPage = () => {
   return (
@@ -11,7 +13,7 @@ const NewWorkItemPage = () => {
       <TextField.Root placeholder="Work Item">
         <TextField.Slot />
       </TextField.Root>
-      <TextArea placeholder="Description" />
+      <SimpleMDE placeholder="Description" />
       <Box as="div" className="border rounded px-2 ">
         <Flex gap="3" align="center">
           <Text as="p" className="text-gray-500 text-sm">
